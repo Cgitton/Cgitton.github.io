@@ -1,0 +1,3 @@
+Deposez ici :
+- photo.jpg : votre photo de profil (portrait, format 4:5 ideal)
+- cv.pdf : votre CV au format PDF

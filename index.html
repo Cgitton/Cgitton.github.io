@@ -1,11 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Camille Gitton – Portfolio, étudiante en BUT Informatique</title>
+<meta name="description" content="Portfolio de Camille Gitton, étudiante en BUT Informatique (systèmes et réseaux), en recherche de stage à partir du 18 janvier.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>oi</h1>
+<header class="nav" id="top">
+  <a class="brand" href="#accueil">Camille Gitton</a>
+  <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu"><span></span></button>
+  <nav id="menu">
+    <a href="#accueil">Accueil</a>
+    <a href="#presentation">Présentation</a>
+    <a href="#parcours">Parcours</a>
+    <a href="#projets">Projets</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section id="accueil" class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="badge">Disponible pour un stage dès le 18 janvier</p>
+      <h1>Camille Gitton</h1>
+      <p class="lead">Étudiante en BUT Informatique, orientée systèmes et réseaux. Je recherche un stage de <strong>8 à 10 semaines</strong> à partir du <strong>18 janvier</strong>.</p>
+      <div class="actions">
+        <a class="btn primary" href="assets/cv.pdf" download="CV_Camille_Gitton.pdf">Télécharger mon CV</a>
+        <a class="btn" href="#projets">Voir mes projets</a>
+      </div>
+    </div>
+    <figure class="photo">
+      <img src="assets/photo.jpg" alt="Portrait de Camille Gitton" width="320" height="400">
+      <span class="initials" aria-hidden="true">CG</span>
+    </figure>
+  </div>
+</section>
+
+<section id="presentation" class="section">
+  <div class="wrap narrow">
+    <h2>Présentation</h2>
+    <p>Bonjour, je suis Camille. Passionnée d'informatique depuis l'enfance grâce aux jeux vidéo, et sportive de haut niveau, j'ai choisi le BUT Informatique pour développer des compétences variées, avec un intérêt marqué pour les systèmes et réseaux.</p>
+    <p>Le sport m'a appris la rigueur, la régularité et le travail en équipe, des qualités que je retrouve dans mes projets. Plus tard, j'espère intégrer une école d'ingénieur pour approfondir mes acquis.</p>
+    <ul class="chips" aria-label="Compétences">
+      <li>Java</li><li>Python</li><li>SQL</li><li>Bash / Linux</li><li>HTML / CSS</li><li>Git</li><li>C#</li><li>Markdown</li>
+    </ul>
+  </div>
+</section>
+
+<section id="parcours" class="section alt">
+  <div class="wrap narrow">
+    <h2>Parcours</h2>
+    <ol class="timeline">
+      <li><time>2024 – 2027</time><h3>BUT Informatique</h3><p>IUT [à compléter], parcours [à compléter]. Projets en développement, bases de données, réseaux et systèmes.</p></li>
+      <li><time>2024</time><h3>Baccalauréat</h3><p>Série [à compléter], lycée [à compléter].</p></li>
+      <li><time>Depuis [année]</time><h3>Sport de haut niveau</h3><p>[Discipline à compléter]. Entraînement régulier et compétition, en parallèle des études.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="projets" class="section">
+  <div class="wrap">
+    <h2>Projets</h2>
+    <div class="filters" role="group" aria-label="Filtrer les projets">
+      <button class="on" data-f="all">Tous</button>
+      <button data-f="java">Java</button>
+      <button data-f="python">Python</button>
+      <button data-f="sys">Systèmes et réseaux</button>
+      <button data-f="web">Web et données</button>
+    </div>
+    <div class="grid">
+      <article class="card" data-t="java">
+        <h3>Application météorologique</h3>
+        <p class="tech">Java · NetBeans · Git</p>
+        <p>À partir d'un code non fonctionnel, j'ai créé une station météo en console qui affiche température, pluie et vent selon des unités et un créneau horaire choisis.</p>
+        <p class="res"><b>Résultat :</b> une station complète qui prend en charge plusieurs types de données.</p>
+      </article>
+      <article class="card" data-t="java">
+        <h3>Jeu de labyrinthe</h3>
+        <p class="tech">JavaFX · Java · Git</p>
+        <p>J'ai réalisé la carte, ses textures, les déplacements du personnage, l'entrée et la sortie, puis les déplacements des monstres.</p>
+        <p class="res"><b>Résultat :</b> un labyrinthe à 2 étages, avec monstres suivant une trajectoire et une sortie qui marque la victoire.</p>
+      </article>
+      <article class="card" data-t="java python">
+        <h3>Comparaison d'arbres AVL et BST</h3>
+        <p class="tech">Java · Python (matplotlib, pandas)</p>
+        <p>J'ai implémenté le parcours, l'équilibrage et les rotations d'arbres, puis un benchmark pour comparer les deux structures.</p>
+        <p class="res"><b>Résultat :</b> temps d'exécution visualisés en boîtes à moustaches, avec taille des arbres paramétrable.</p>
+      </article>
+      <article class="card" data-t="python web">
+        <h3>Visualisation statistique de données</h3>
+        <p class="tech">Python (pandas) · SQL · C# · Gantt · Git</p>
+        <p>Projet d'équipe pour l'entreprise « Bon Pote » : transformer des données chiffrées en graphiques par zone géographique, avec suivi de projet sur diagramme de Gantt.</p>
+        <p class="res"><b>Résultat :</b> un logiciel qui génère des graphiques pour visualiser des données écologiques.</p>
+      </article>
+      <article class="card" data-t="sys">
+        <h3>Installation d'une machine virtuelle</h3>
+        <p class="tech">VMware · Bash · Git</p>
+        <p>J'ai choisi un OS léger adapté à une configuration limitée, puis installé les outils de développement et configuré rôles et permissions.</p>
+        <p class="res"><b>Résultat :</b> VM Debian 11 (Xfce) avec Git, VSCode et le langage FORTH.</p>
+      </article>
+      <article class="card" data-t="sys">
+        <h3>Configuration d'un réseau virtuel</h3>
+        <p class="tech">Bash · NEmu · VSCode · Markdown</p>
+        <p>J'ai installé NextCloud et OnlyOffice sur 2 serveurs, configuré 2 utilisateurs avec leurs groupes et permissions, et rédigé le guide d'installation.</p>
+        <p class="res"><b>Résultat :</b> des machines qui communiquent entre elles et avec les serveurs, guide complet en anglais.</p>
+      </article>
+      <article class="card" data-t="web">
+        <h3>Site web « All In One Sport »</h3>
+        <p class="tech">HTML · CSS</p>
+        <p>Site statique multipage respectant l'UX/UI et la validation W3C, adapté mobile et PC, conçu à partir d'une maquette.</p>
+        <p class="res"><b>Résultat :</b> un site intuitif qui présente l'application pour sportifs de tous niveaux, fidèle à la maquette.</p>
+      </article>
+      <article class="card" data-t="web">
+        <h3>Base de données universitaire</h3>
+        <p class="tech">SQL Server · WinDesign</p>
+        <p>Schéma, script de création et script de vérification d'un système scolaire : relations, jointures et principe du CRUD.</p>
+        <p class="res"><b>Résultat :</b> une base propre avec données fictives (professeurs, étudiants, cours, emplois du temps).</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section alt">
+  <div class="wrap narrow">
+    <h2>Contact</h2>
+    <p>Un stage à proposer, une question sur un projet ? Écrivez-moi, je réponds rapidement.</p>
+    <ul class="contacts">
+      <li><span>Email</span><a href="mailto:camille.gitton@example.com">camille.gitton@example.com</a></li>
+      <li><span>Téléphone</span><a href="tel:+33600000000">06 00 00 00 00</a></li>
+      <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/votre-profil" target="_blank" rel="noopener">linkedin.com/in/votre-profil</a></li>
+      <li><span>GitHub</span><a href="https://github.com/votre-pseudo" target="_blank" rel="noopener">github.com/votre-pseudo</a></li>
+    </ul>
+    <a class="btn primary" href="assets/cv.pdf" download="CV_Camille_Gitton.pdf">Télécharger mon CV (PDF)</a>
+  </div>
+</section>
+</main>
+
+<footer><p>© <span id="year">2026</span> Camille Gitton</p><a href="#top">Retour en haut</a></footer>
+<script src="js/main.js"></script>
 </body>
 </html>
